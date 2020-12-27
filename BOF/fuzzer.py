@@ -4,20 +4,25 @@ import socket
 import sys
 import time
 
-IP       = '10.10.10.10'
-PORT     = '4444'
-CMD      = 'CMD '
-
+ip       = '10.10.84.100'
+port     = 1337
+cmd      = 'command'
+timeout  = 5 # seconds
 buffer   = 'C' * 100
 
 while True:
-	try:
-		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.connect((IP, PORT))
-		s.send((CMD + buffer))
-		s.close()
-		time.sleep(1)
-		buffer = buffer + 'C' * 100
-	except:
-		print(f'Fuzzing crashed at {str(len(buffer))} bytes.')
-		sys.exit
+        try:
+                print(f'Attempting [{len(buffer)}] bytes ...')
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                s.connect((ip, port))
+                s.settimeout(timeout)
+                message = cmd + ' ' + buffer
+                s.send(message.encode('utf-8'))
+                s.recv(1024)
+                s.close()
+                time.sleep(1)
+                buffer = buffer + 'C' * 100
+        except Exception as e:
+                print(f'Fuzzing crashed at {len(buffer)} bytes.')
+                print(f'\tErr: {e}')
+                sys.exit(0)
