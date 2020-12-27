@@ -4,7 +4,7 @@ import socket
 import sys
 import time
 
-ip       = '10.10.84.100'
+ip       = '10.10.10.10'
 port     = 1337
 cmd      = 'command'
 timeout  = 5 # seconds
@@ -12,7 +12,7 @@ buffer   = 'C' * 100
 
 while True:
         try:
-                print(f'Attempting [{len(buffer)}] bytes ...')
+                print(f'Attempting [{len(buffer):05}] bytes ...')
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 s.connect((ip, port))
                 s.settimeout(timeout)
