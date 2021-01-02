@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #=======================================#
 #  Fuzzing script for Buffer Everflows  #
 #=======================================#
@@ -10,8 +12,6 @@
 # a modification of the "try" block might be necessary!
 #
 #=======================================#
-
-#!/usr/bin/env python3
 
 import socket
 import sys
