@@ -19,8 +19,8 @@ from  xml.etree import ElementTree
 
 #======[CONFIG]======
 
-ip   = '10.10.234.161' # change me
-user = 'elliot' # change me
+ip   = '10.10.10.10' # change me
+user = 'username' # change me
 
 # defaults
 port = '80'
