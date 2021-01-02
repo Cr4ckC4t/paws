@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #======================================#
 #  Script for finding bad characters   #
 #======================================#
@@ -14,8 +16,6 @@
 #    Here all hex values follow the format 00-FF (no prefix)
 #
 #======================================#
-
-#!/usr/bin/env python3
 
 import sys
 
