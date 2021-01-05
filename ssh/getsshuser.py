@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #==============================================================#
-#  Attempt to find the correct user for a SSH given password.  #
+#  Attempt to find the correct user for a given SSH password.  #
 #==============================================================#
 #
 # Became useful in a CTF.
