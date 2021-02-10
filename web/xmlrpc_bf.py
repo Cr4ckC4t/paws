@@ -127,7 +127,8 @@ def main(wordlist):
                 print(f'{fc.red}[+]{fc.end} Shutting down.')
                 sys.exit(0)
 
-        with open(wordlist, 'r') as inp:
+        # latin1 supports most common wordlists (including rockyou.txt)
+        with open(wordlist, 'r', encoding='latin1') as inp:
                 allpasses = inp.readlines()
 
         allpasses = [p.strip('\n') for p in allpasses] # strip newlines
