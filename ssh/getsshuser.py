@@ -134,7 +134,7 @@ if __name__ == '__main__':
                 print(f'   - [{fc.cyan}mode{fc.end}    ] - login method {fc.red+"(not set)"+fc.end if mode == "" else fc.green+"(set to " + mode + ")"+fc.end}')
                 print(f'                        "{fc.green}creds{fc.end}"  < got a password')
                 print(f'                        "{fc.green}key{fc.end}"    < got a private key (no password required)')
-                print(f'                        "{fc.green}keyenc{fc.end}" < got an encrypted private key (password required)"')
+                print(f'                        "{fc.green}keyenc{fc.end}" < got an encrypted private key (password required)')
                 print(f'   - [{fc.cyan}password{fc.end}] - valid SSH password/passphrase {fc.orange+"(not set)"+fc.end if password == "" else fc.green+"(set to " + password + ")"+fc.end}')
                 print(f'   - [{fc.cyan}keypath{fc.end} ] - path to private key {fc.orange+"(not set)"+fc.end if keypath == "" else fc.green+"(set to " + keypath + ")"+fc.end}')
                 sys.exit(0)
