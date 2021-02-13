@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 
-#======================#
-#  Brute force XMLRPC  #
-#======================#
-#
-# Requires:
+# [Description]
+#        Brute force WordPress login via xmlrpc.php
+
+# [Requires]
 #        - a valid user (verify at wp-login.php via "lost password")
-# Usage:
-#        1) Set the ip, user and optionally the path to the xmlrpc file
-#        2) Run the script with a wordlist as argument
-#
-#======================#
+
+# [Usage]
+#        1) set the ip, user and if necessary the xmlrpc.php path
+#        2) run the script with a wordlist as argument
+
+# [Author]
+#        @crackcat
 
 from multiprocessing import Pool
 import requests
@@ -34,9 +35,10 @@ processes = 5
 description = '''
  This python3 script aims to leverage "xmlrpc.php" of a
  WordPress website to brute force a password for a user.
-
- Details: https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions/
-
+                                               @crackcat
+                                               
+ Details: https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions/                                                                                           
+ 
 '''
 
 pool = None
