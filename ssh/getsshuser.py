@@ -3,6 +3,9 @@
 # [Description]
 #	This script automates SSH authentication to find a valid user for a given password/key
 
+# [Requires]
+#       - a valid password and/or a private key
+
 # [Usage]
 #	1) update parameters (ip,password)
 #	2) run the script with a wordlist as argument
