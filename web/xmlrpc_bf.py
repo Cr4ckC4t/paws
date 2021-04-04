@@ -68,7 +68,7 @@ def verify_vuln():
                 print(f'{fc.green}[+] Success.{fc.end} XMLRPC reacts to queries.')
                 return True
         else:
-                print(f'{fc.red}[+]{fc.end} {fc.orange}Failure.{fc.end} Response did not contain expected value.')
+                print(f'{fc.red}[+]{fc.end} This XMLRPC is {fc.orange}probably not vulnerable{fc.end} (deactivated).')
                 return False
 
 def send_passwords(passwords):
