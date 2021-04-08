@@ -68,7 +68,9 @@ def verify_vuln():
                 print(f'{fc.green}[+] Success.{fc.end} XMLRPC reacts to queries.')
                 return True
         else:
-                print(f'{fc.red}[+]{fc.end} This XMLRPC is {fc.orange}probably not vulnerable{fc.end} (deactivated).')
+                print(f'{fc.red}[+]{fc.end} This XMLRPC is {fc.orange}probably not vulnerable{fc.end} (demo.sayHello is deactivated).')
+                # we could check all available methods manually with this command line (but it's likely to return nothing)
+                # curl -X POST http://<ip>/xmlrpc.php --data-binary "<?xml version="1.0" encoding="UTF-8"?><methodCall><methodName>system.listMethods</methodName><params></params></methodCall>"
                 return False
 
 def send_passwords(passwords):
