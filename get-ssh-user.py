@@ -20,7 +20,7 @@ import sys
 
 
 ip            = ''  # target
-password      = ''  # valid password/passphrase (required the "creds" and "keyenc" mode)
+password      = ''  # valid password/passphrase (required by the "creds" and "keyenc" mode)
 
 mode          = 'creds'
 # creds  : requires a valid password (default)
