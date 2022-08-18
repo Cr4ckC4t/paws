@@ -107,7 +107,7 @@ keymap_string=f'''
 def main(args):
         print(f'{fc.blue}[+]{fc.end} Using this keymap: {keymap_string}')
         if args.delimiter == '':
-                print(f'{fc.yellow}[!] Warning:{fc.end} Using an empty delimiter. Cipher might not be reversabl)
+                print(f'{fc.yellow}[!] Warning:{fc.end} Using an empty delimiter. Cipher might not be reversable')
         else:
                 print(f'{fc.blue}[+]{fc.end} Using "{args.delimiter}" as delimiter.')
 
@@ -122,10 +122,10 @@ def main(args):
 
         print()
         if invalid > 0:
-                print(f'{fc.yellow}[!] {fc.red}Failed{fc.end} on {invalid} character{"s" if (invalid > 1) else . (Check format and delimiter?)')
+                print(f'{fc.yellow}[!] {fc.red}Failed{fc.end} on {invalid} character{"s" if (invalid > 1) else "." (Check format and delimiter?)')
         if invalid < 0:
                 print(f'{fc.red}[!] Error:{fc.end} Invalid input. Check format and delimiter.')
-        print(f'{fc.blue}[>]{fc.pink} Done.{fc.end} [{fc.yellow}Keep in mind{fc.end}: uppercase cipher == lowere cipher]')
+        print(f'{fc.blue}[>]{fc.pink} Done.{fc.end} [{fc.yellow}Keep in mind{fc.end}: uppercase cipher == lower cipher]')
 
 
 banner='''
