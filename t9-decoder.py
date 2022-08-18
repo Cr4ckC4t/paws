@@ -122,7 +122,7 @@ def main(args):
 
         print()
         if invalid > 0:
-                print(f'{fc.yellow}[!] {fc.red}Failed{fc.end} on {invalid} character{"s" if (invalid > 1) else "." (Check format and delimiter?)')
+                print(f'{fc.yellow}[!] {fc.red}Failed{fc.end} on {invalid} character{"s" if (invalid > 1) else "."} (Check format and delimiter?)')
         if invalid < 0:
                 print(f'{fc.red}[!] Error:{fc.end} Invalid input. Check format and delimiter.')
         print(f'{fc.blue}[>]{fc.pink} Done.{fc.end} [{fc.yellow}Keep in mind{fc.end}: uppercase cipher == lower cipher]')
